@@ -1,12 +1,13 @@
-public class Transport {
+public abstract class Transport implements Vehicle {
     private String modelName;
     private int wheelsCount;
-public Transport (String modelName, int wheelsCount) {
- this.modelName = modelName;
- this.wheelsCount = wheelsCount;
-}
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+
+
+
+    public Transport(String modelName, int wheelsTyre){
+        this.modelName = modelName;
+        this.wheelsCount = wheelsTyre;
+
     }
     public String getModelName() {
         return modelName;
@@ -16,4 +17,3 @@ public Transport (String modelName, int wheelsCount) {
         return wheelsCount;
     }
 }
-
